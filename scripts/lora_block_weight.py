@@ -85,8 +85,8 @@ class Script(modules.scripts.Script):
         runorigini = scripts.scripts_img2img.run
 
         path_root = scripts.basedir()
-        extpath = os.path.join(path_root,"extensions","sd-webui-lora-block-weight","scripts", "lbwpresets.txt")
-        extpathe = os.path.join(path_root,"extensions","sd-webui-lora-block-weight","scripts", "elempresets.txt")
+        extpath = os.path.join(path_root,"extensions","sd-lora-block-weight","scripts", "lbwpresets.txt")
+        extpathe = os.path.join(path_root,"extensions","sd-lora-block-weight","scripts", "elempresets.txt")
         filepath = os.path.join(path_root,"scripts", "lbwpresets.txt")
         filepathe = os.path.join(path_root,"scripts", "elempresets.txt")
 
@@ -583,7 +583,7 @@ def smakegrid(imgs,xs,ys,currentmodel,p):
 
 def get_font(fontsize):
     path_root = scripts.basedir()
-    fontpath = os.path.join(path_root,"extensions","sd-webui-lora-block-weight","scripts", "Roboto-Regular.ttf")
+    fontpath = os.path.join(path_root,"extensions","sd-lora-block-weight","scripts", "Roboto-Regular.ttf")
     try:
         return ImageFont.truetype(opts.font or fontpath, fontsize)
     except Exception:
